@@ -1,0 +1,25 @@
+{
+  "name": "calling-bell-receiver",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "tsx -r dotenv/config src/app.ts dotenv_config_path=./.env.production",
+    "dev": "tsx watch -r dotenv/config src/app.ts dotenv_config_path=./.env.development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@types/rpio": "^2.4.6",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.9.4"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "mqtt": "^5.5.5",
+    "rpio": "^2.4.2"
+  }
+}

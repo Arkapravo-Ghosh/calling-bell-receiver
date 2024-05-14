@@ -1,0 +1,14 @@
+[Unit]
+Description=Calling Bell Receiver Service
+
+[Service]
+Type=simple
+User=root
+Group=root
+StartLimitBurst=0
+WorkingDirectory=/var/calling-bell-receiver
+ExecStart=/usr/bin/npm start
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
